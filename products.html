@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1>Mini Store</h1>
+            <button class="mobile-menu-toggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="product-list" aria-label="Product listing">
+            <div class="product" data-id="1" tabindex="0">
+                <img src="assets/images/product1.jpg" alt="Product 1" loading="lazy">
+                <h3>Product 1</h3>
+                <p>$10</p>
+                <button onclick="addToCart(1)" aria-label="Add Product 1 to cart">Add to Cart</button>
+            </div>
+            <div class="product" data-id="2" tabindex="0">
+                <img src="assets/images/product2.jpg" alt="Product 2" loading="lazy">
+                <h3>Product 2</h3>
+                <p>$15</p>
+                <button onclick="addToCart(2)" aria-label="Add Product 2 to cart">Add to Cart</button>
+            </div>
+            <div class="product" data-id="3" tabindex="0">
+                <img src="assets/images/product3.jpg" alt="Product 3" loading="lazy">
+                <h3>Product 3</h3>
+                <p>$12</p>
+                <button onclick="addToCart(3)" aria-label="Add Product 3 to cart">Add to Cart</button>
+            </div>
+            <div class="product" data-id="4" tabindex="0">
+                <img src="assets/images/product4.jpg" alt="Product 4" loading="lazy">
+                <h3>Product 4</h3>
+                <p>$20</p>
+                <button onclick="addToCart(4)" aria-label="Add Product 4 to cart">Add to Cart</button>
+            </div>
+            <div class="product" data-id="5" tabindex="0">
+                <img src="assets/images/product5.jpg" alt="Product 5" loading="lazy">
+                <h3>Product 5</h3>
+                <p>$8</p>
+                <button onclick="addToCart(5)" aria-label="Add Product 5 to cart">Add to Cart</button>
+            </div>
+            <div class="product" data-id="6" tabindex="0">
+                <img src="assets/images/product6.jpg" alt="Product 6" loading="lazy">
+                <h3>Product 6</h3>
+                <p>$25</p>
+                <button onclick="addToCart(6)" aria-label="Add Product 6 to cart">Add to Cart</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Mini Store. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

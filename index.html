@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini E-commerce</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1>Mini Store</h1>
+            <button class="mobile-menu-toggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <h2>Welcome to Mini Store</h2>
+            <p>Explore our collection of amazing items!</p>
+            <a href="products.html" class="btn">Shop Now</a>
+        </section>
+
+        <!-- Featured Products -->
+        <section class="featured">
+            <h3>Featured Products</h3>
+            <div class="product-list">
+                <div class="product" data-id="1" tabindex="0">
+                    <img src="assets/images/product1.jpg" alt="Product 1" loading="lazy">
+                    <h4>Product 1</h4>
+                    <p>$10</p>
+                    <button onclick="addToCart(1)" aria-label="Add Product 1 to cart">Add to Cart</button>
+                </div>
+                <div class="product" data-id="2" tabindex="0">
+                    <img src="assets/images/product2.jpg" alt="Product 2" loading="lazy">
+                    <h4>Product 2</h4>
+                    <p>$15</p>
+                    <button onclick="addToCart(2)" aria-label="Add Product 2 to cart">Add to Cart</button>
+                </div>
+                <div class="product" data-id="3" tabindex="0">
+                    <img src="assets/images/product3.jpg" alt="Product 3" loading="lazy">
+                    <h4>Product 3</h4>
+                    <p>$12</p>
+                    <button onclick="addToCart(3)" aria-label="Add Product 3 to cart">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="testimonials">
+            <h3>What Our Customers Say</h3>
+            <div class="testimonial-slider">
+                <blockquote>
+                    "Great service and amazing quality!" – Sarah J.
+                </blockquote>
+                <blockquote>
+                    "My go-to online store. Always satisfied." – Mike D.
+                </blockquote>
+                <blockquote>
+                    "Fast delivery and fantastic support!" – Emma K.
+                </blockquote>
+            </div>
+        </section>
+
+        <!-- Newsletter -->
+        <section class="newsletter">
+            <h3>Stay Updated!</h3>
+            <p>Subscribe to our newsletter for exclusive deals and updates.</p>
+            <form id="newsletter-form">
+                <input type="email" id="newsletter-email" placeholder="Enter your email" required />
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Mini Store. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
